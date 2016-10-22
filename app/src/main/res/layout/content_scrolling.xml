@@ -13,8 +13,29 @@
     tools:context="com.example.giovanna.myapplication.MainActivity"
     tools:showIn="@layout/app_bar_main">
 
-    <ImageView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:src="@drawable/menu"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="5dp"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/menu"/>
+
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:clickable="true"
+            android:id="@+id/promo"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginTop="86dp"></RelativeLayout>
+
+    </RelativeLayout>
 </RelativeLayout>
